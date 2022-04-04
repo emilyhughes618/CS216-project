@@ -1,1 +1,7 @@
-
+import matplotlib.pyplot as plt
+country_cat_piv.plot(kind='barh', x="Audience Country", stacked=True)
+plt.tick_params(axis='y', which='major', labelsize = 8)
+plt.xlabel("Count")
+plt.ylabel("Audience Country")
+plt.title("Category Counts by Audience Country") 
+plt.legend(bbox_to_anchor=(1.5, 1), loc='upper right', borderaxespad=0)
